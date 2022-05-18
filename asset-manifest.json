@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ecommerce-React-Panadeiro/static/css/main.672281a8.css",
-    "main.js": "/Ecommerce-React-Panadeiro/static/js/main.c24b3401.js",
+    "main.js": "/Ecommerce-React-Panadeiro/static/js/main.73169404.js",
     "static/js/787.2513c91a.chunk.js": "/Ecommerce-React-Panadeiro/static/js/787.2513c91a.chunk.js",
     "static/media/c4-1.png": "/Ecommerce-React-Panadeiro/static/media/c4-1.a88cd0cf147edba1a5c1.png",
     "static/media/pump-1.png": "/Ecommerce-React-Panadeiro/static/media/pump-1.26fdcccee1242eb92faa.png",
@@ -13,11 +13,11 @@
     "static/media/creatina-star.png": "/Ecommerce-React-Panadeiro/static/media/creatina-star.4ea3f509b70c7e631d2f.png",
     "index.html": "/Ecommerce-React-Panadeiro/index.html",
     "main.672281a8.css.map": "/Ecommerce-React-Panadeiro/static/css/main.672281a8.css.map",
-    "main.c24b3401.js.map": "/Ecommerce-React-Panadeiro/static/js/main.c24b3401.js.map",
+    "main.73169404.js.map": "/Ecommerce-React-Panadeiro/static/js/main.73169404.js.map",
     "787.2513c91a.chunk.js.map": "/Ecommerce-React-Panadeiro/static/js/787.2513c91a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.672281a8.css",
-    "static/js/main.c24b3401.js"
+    "static/js/main.73169404.js"
   ]
 }
