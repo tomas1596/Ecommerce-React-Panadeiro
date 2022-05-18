@@ -1,0 +1,23 @@
+.card-container {
+    margin: 10px;
+}
+
+.card-img{
+    width: 225px;
+    height: 300px;
+}
+
+.link, .link:hover, .link:active, .link:focus{
+    text-decoration: none;
+    color: black;
+}
+
+.card-body{
+    border: 2px solid grey;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,13 @@
+.detail-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (min-width: 1200px){
+    .detail-img{
+        width: 325px;
+        height: 400px;
+        object-fit: contain;
+    }
+} 

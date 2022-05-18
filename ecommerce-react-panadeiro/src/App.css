@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  background-image: url("https://i.ibb.co/f0ZxFDz/ctrl-a-meal-replacement-03e4-Rajf-FAE-unsplash.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  height: 100vh;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  margin:0;
+  padding:0;
+}

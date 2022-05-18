@@ -1,0 +1,23 @@
+.cart-widget {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.quantity {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+    line-height: 17px;
+    right: 2.5rem;
+}
+
+.fa-cart-shopping {
+    color: white;
+}

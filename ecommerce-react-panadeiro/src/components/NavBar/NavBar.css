@@ -1,0 +1,39 @@
+.navbar-nav > li{
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.navbar-nav{
+    margin-left: -5rem;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.dropdown-menu li p{
+    text-align: center;
+}
+
+p:hover { 
+    color: rgb(189, 189, 189) !important;
+} 
+
+.dropdown-menu {
+    min-width:130px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar__logo-right, .nav-cart-1, .quantity{
+        display: none;
+    }
+    .navbar-toggler{
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-cart-2{
+        display: none;
+    }
+}
