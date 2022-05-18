@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <BrowserRouter basename='/ecommerce-panadeiro'>
+    <BrowserRouter basename='/Ecommerce-React-Panadeiro'>
       <div className='App'>
           <NavBar />
             <Routes>
