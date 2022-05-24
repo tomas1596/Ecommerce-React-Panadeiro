@@ -6,13 +6,15 @@ import ItemListContainer from './Container/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './Container/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
 import About from './components/About/About';
-import Footer from './components/Footer/Footer';
+/* import Footer from './components/Footer/Footer'; */
+import CartContextProvider from './Container/Context/CartContext';
 
 
 function App() {
   return (
     <BrowserRouter basename='/Ecommerce-React-Panadeiro'>
-      <div className='App'>
+      <CartContextProvider >
+        <div className='App'>
           <NavBar />
             <Routes>
               <Route path='/' element = { <ItemListContainer /> } />
@@ -23,8 +25,9 @@ function App() {
 
               <Route path='/*' element ={ <Navigate to ='/' replace /> }></Route>
             </Routes>
-          <Footer />
+{/*           <Footer /> */}
           </div>
+        </CartContextProvider>
     </BrowserRouter>
   )
 }

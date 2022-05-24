@@ -1,0 +1,22 @@
+.link, .link:hover, .link:active, .link:focus{
+    text-decoration: none;
+    color: black;
+}
+
+.cart-img{
+    height:0;
+    min-height:100%;
+}
+
+.title-card{
+    font-size: 2.5rem;
+}
+
+.trash-btn{
+    height: 10vh;
+    width: 5vw;
+}
+
+.basis{
+    flex-basis: 50%;
+}
