@@ -15,7 +15,7 @@ const ItemDetailContainer = (isLoading) => {
 
     useEffect(() => {
         const db = getFirestore()
-        const dbQuery = doc(db, 'items', 'EOfFvuUQwrCBL6ydFfro')
+        const dbQuery = doc(db, 'items', IdDetail)
         getDoc(dbQuery)
         .then(resp => setProductos( { id: resp.id, ...resp.data()}))
         .catch((err)=> console.log(err))

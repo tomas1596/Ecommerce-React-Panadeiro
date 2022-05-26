@@ -45,7 +45,6 @@ const CartContextProvider = ({children}) => {
         let index = newCart.findIndex((product) => product.id === id);
         newCart.splice(index, 1);
         setCartList([...newCart])
-        setTotalItems(index, -1)
     }
 
     const removeCart = () => {
