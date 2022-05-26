@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Ecommerce-React-Panadeiro/static/css/main.d5b126eb.css",
-    "main.js": "/Ecommerce-React-Panadeiro/static/js/main.2a778e27.js",
+    "main.css": "/Ecommerce-React-Panadeiro/static/css/main.568c6f77.css",
+    "main.js": "/Ecommerce-React-Panadeiro/static/js/main.e722ec87.js",
     "static/js/787.2513c91a.chunk.js": "/Ecommerce-React-Panadeiro/static/js/787.2513c91a.chunk.js",
     "static/media/c4-1.png": "/Ecommerce-React-Panadeiro/static/media/c4-1.a88cd0cf147edba1a5c1.png",
     "static/media/pump-1.png": "/Ecommerce-React-Panadeiro/static/media/pump-1.26fdcccee1242eb92faa.png",
@@ -12,12 +12,12 @@
     "static/media/whey-1.png": "/Ecommerce-React-Panadeiro/static/media/whey-1.114c30fa5da81bd4df7e.png",
     "static/media/creatina-star.png": "/Ecommerce-React-Panadeiro/static/media/creatina-star.4ea3f509b70c7e631d2f.png",
     "index.html": "/Ecommerce-React-Panadeiro/index.html",
-    "main.d5b126eb.css.map": "/Ecommerce-React-Panadeiro/static/css/main.d5b126eb.css.map",
-    "main.2a778e27.js.map": "/Ecommerce-React-Panadeiro/static/js/main.2a778e27.js.map",
+    "main.568c6f77.css.map": "/Ecommerce-React-Panadeiro/static/css/main.568c6f77.css.map",
+    "main.e722ec87.js.map": "/Ecommerce-React-Panadeiro/static/js/main.e722ec87.js.map",
     "787.2513c91a.chunk.js.map": "/Ecommerce-React-Panadeiro/static/js/787.2513c91a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5b126eb.css",
-    "static/js/main.2a778e27.js"
+    "static/css/main.568c6f77.css",
+    "static/js/main.e722ec87.js"
   ]
 }
