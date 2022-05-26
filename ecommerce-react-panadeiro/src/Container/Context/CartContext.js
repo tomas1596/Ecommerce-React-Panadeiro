@@ -7,6 +7,8 @@ export const useCartContext = () => useContext(CartContext)
 const CartContextProvider = ({children}) => {
 
     const [cartList, setCartList] = useState([])
+    const [totalPrice, setTotalPrice] = useState(0);
+    const [totalItems, setTotalItems] = useState(0);
 
     function addToCart(item) {
         if(cartList.some(article => article.id === item.id)){
@@ -16,13 +18,25 @@ const CartContextProvider = ({children}) => {
                 }
                 return article;
             })
-            setCartList(newCart);
+            updateCart(newCart);
         } else {
-            setCartList([
+            updateCart([
                 ...cartList,
                 item
             ])
         }
+    }
+
+    function updateCart(arr) {
+        setCartList(arr);
+        setTotalPrice(arr
+            .map(curr => curr.count*curr.price)
+            .reduce((acc,curr) => acc+curr,0)
+        );
+        setTotalItems(arr
+            .map(curr => curr.count)
+            .reduce((acc,curr) => acc+curr,0)
+        );
     }
 
 
@@ -30,19 +44,24 @@ const CartContextProvider = ({children}) => {
         const newCart = [...cartList];
         let index = newCart.findIndex((product) => product.id === id);
         newCart.splice(index, 1);
-
         setCartList([...newCart])
+        setTotalItems(index, -1)
     }
 
     const removeCart = () => {
         setCartList([])
+        setTotalPrice(0)
+        setTotalItems(0)
     }
+
     return (
         <CartContext.Provider value={{
             cartList,
             addToCart,
             removeItem,
-            removeCart
+            removeCart,
+            totalPrice,
+            totalItems
         }}>
             {children}
         </CartContext.Provider>

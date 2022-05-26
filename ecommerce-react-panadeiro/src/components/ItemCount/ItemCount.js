@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 
-function ItemCount({stock, initial, onAdd, handleInter, producto}) {
+function ItemCount({stock, initial, onAdd, handleInter}) {
     const[count, setCount] = useState(initial);
 
     const addCount = (number) => {
@@ -11,7 +11,7 @@ function ItemCount({stock, initial, onAdd, handleInter, producto}) {
     function addToCart() {
         onAdd(count);
         handleInter();
-      }
+    }
 
     return (
         <div className='container-fluid'>

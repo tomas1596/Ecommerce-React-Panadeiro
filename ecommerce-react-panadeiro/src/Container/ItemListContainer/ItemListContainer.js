@@ -4,6 +4,7 @@ import { useEffect, useState} from "react";
 import { useParams } from 'react-router-dom';
 import { getFetch, } from "../../data/data";
 import { DotSpinner } from '@uiball/loaders'
+import { doc, getDoc, getDocs, collection, getFirestore, query, where } from 'firebase/firestore'
 
 
 
@@ -14,7 +15,23 @@ const ItemListContainer = (isLoading, {greeting = 'WE GO GYM MUSCLE SHOP'}) => {
 
     const {id} = useParams()
 
+
+    //ItemListContainer
     useEffect(() => {
+        const db = getFirestore()
+
+        const queryCollection = collection(db, 'items')
+        const queryCollectionFilter = query(queryCollection, where('catalogo', '==', 'suplementos'))
+
+        getDocs(queryCollectionFilter)
+        .then(resp => setProductos(resp.docs.map(item => ({ id: item.id, ...item.data()}))))
+        .catch((err)=> console.log(err))
+        .finally(()=>setLoading(false))
+    },[])
+    console.log(productos)
+
+
+/*     useEffect(() => {
         if (id) {
             getFetch()
             .then(resp=> setProductos(resp.filter((item) => item.category === id)))
@@ -26,7 +43,7 @@ const ItemListContainer = (isLoading, {greeting = 'WE GO GYM MUSCLE SHOP'}) => {
             .catch((err)=> console.log(err))
             .finally(()=>setLoading(false))                 
         }
-    }, [id])
+    }, [id]) */
 
     return (
             <div>

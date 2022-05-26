@@ -3,21 +3,31 @@ import { useParams } from 'react-router-dom';
 import { getFetch } from "../../data/data";
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
 import { DotSpinner } from '@uiball/loaders';
+import { doc, getDoc, getFirestore } from 'firebase/firestore';
 
 const ItemDetailContainer = (isLoading) => {
 
     const [productos, setProductos] = useState({});
     const [loading, setLoading] = useState(true);
+
     const {IdDetail} = useParams()
 
+
     useEffect(() => {
-        setTimeout(() => {
+        const db = getFirestore()
+        const dbQuery = doc(db, 'items', 'EOfFvuUQwrCBL6ydFfro')
+        getDoc(dbQuery)
+        .then(resp => setProductos( { id: resp.id, ...resp.data()}))
+        .catch((err)=> console.log(err))
+        .finally(() => setLoading(false)) 
+    },[])
+
+/*     useEffect(() => {
             getFetch(IdDetail)
             .then(resp=> setProductos(resp))
             .catch((err)=> console.log(err))
             .finally(() => setLoading(false)) 
-        }, 1000)    
-    },[IdDetail])
+    },[IdDetail]) */
 
     console.log(productos)
 

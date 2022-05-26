@@ -44,7 +44,7 @@ const ItemDetail = ({productos}) => {
                             <img style={{ width: '13em'}} className="detail-img wow pulse" src={productos.img} alt={productos.name}/>
                         </ControlledZoom>
                         <h2 className="text-dark">{productos.productdescription}</h2>
-                        <h5 className="">{productos.price}</h5>
+                        <h5 className="">Precio: {productos.price}</h5>
                         <h5 className="">Stock: {productos.stock}</h5>
                             <div className="d-flex justify-content-center">
                                 {inputType === 'button' ?  <ItemCount handleInter={handleInter} stock={productos.stock} initial={1} onAdd={onAdd}/>
