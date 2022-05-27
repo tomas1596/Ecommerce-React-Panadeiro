@@ -34,7 +34,7 @@ const Cart = () => {
                 <div>
                     {cartList.length ? 
                     <div className="d-flex flex-row card justify-content-between">
-                        <p className="price ms-5">{`Costo total: $${totalPrice}`}</p>
+                        <h5 className="price ms-5">{`Costo total: $${totalPrice}`}</h5>
                         <button className="fw-bold btn-md btn-block me-5" onClick={removeCart}>Vaciar Carrito</button>
                     </div>  
                     : 
