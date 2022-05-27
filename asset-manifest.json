@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Ecommerce-React-Panadeiro/static/css/main.492a4343.css",
-    "main.js": "/Ecommerce-React-Panadeiro/static/js/main.07b21c0a.js",
+    "main.js": "/Ecommerce-React-Panadeiro/static/js/main.7fe0dde3.js",
     "static/js/787.2513c91a.chunk.js": "/Ecommerce-React-Panadeiro/static/js/787.2513c91a.chunk.js",
     "index.html": "/Ecommerce-React-Panadeiro/index.html",
     "main.492a4343.css.map": "/Ecommerce-React-Panadeiro/static/css/main.492a4343.css.map",
-    "main.07b21c0a.js.map": "/Ecommerce-React-Panadeiro/static/js/main.07b21c0a.js.map",
+    "main.7fe0dde3.js.map": "/Ecommerce-React-Panadeiro/static/js/main.7fe0dde3.js.map",
     "787.2513c91a.chunk.js.map": "/Ecommerce-React-Panadeiro/static/js/787.2513c91a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.492a4343.css",
-    "static/js/main.07b21c0a.js"
+    "static/js/main.7fe0dde3.js"
   ]
 }
