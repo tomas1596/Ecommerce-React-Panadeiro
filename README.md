@@ -18,10 +18,10 @@
 
 ## <p align=center><b> <img src="https://img.icons8.com/emoji/48/undefined/fire.png" width="30px"/> - Check out my other projects - <img src="https://img.icons8.com/emoji/48/undefined/fire.png" width="30px"/> </p>
 
-- #### Web developer : https://tomas1596.github.io/ProyectoFinal-DW/ (Imagine Dragons - Music)
+- ### Web developer : https://tomas1596.github.io/ProyectoFinal-DW/ (Imagine Dragons - Music)
 <img src="https://i.ibb.co/X8CGkbj/6db16f32bec7d7b3078b9e7f40b0b452.jpg" width="800px"/>
 <br />
-- #### Javascript : https://tomas1596.github.io/ProyectoFinal-JS/ (Animeflix - Netflix Clone)
+- ### Javascript : https://tomas1596.github.io/ProyectoFinal-JS/ (Animeflix - Netflix Clone)
 <img src="https://i.ibb.co/mhPwpG3/be491727191cac3f37f62c64b5eca1f5.png" width="800px"/>
 
 
@@ -43,6 +43,3 @@
 <img alt="GitHub" width="35px" src="https://user-images.githubusercontent.com/3369400/139448065-39a229ba-4b06-434b-bc67-616e2ed80c8f.png" style="padding-right:10px;" />
 <img alt="Firebase" width="35px"  src="https://img.icons8.com/color/48/undefined/firebase.png"/>
 </p>
-
-<br />
-<br />
