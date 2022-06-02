@@ -12,7 +12,7 @@ function Item({id, img, name, price}) {
     }, [])
 
     return (
-        <div className="card-container wow fadeIn">
+        <div className="card-container w-25 wow fadeIn">
             
             <div className="card-body text-dark"><Link to={`/detail/${id}`} className="link ">
                 <img className="card-img" src={img} alt={name}></img>  

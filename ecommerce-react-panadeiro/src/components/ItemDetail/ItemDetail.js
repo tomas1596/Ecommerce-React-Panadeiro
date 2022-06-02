@@ -1,5 +1,4 @@
 import ItemCount from "../ItemCount/ItemCount";
-import './ItemDetail.css';
 import { useState, useCallback, useEffect } from "react";
 import CartButtons from "../CartButtons/CartButtons";
 import { Controlled as ControlledZoom } from 'react-medium-image-zoom'
@@ -36,17 +35,17 @@ const ItemDetail = ({products}) => {
     }, [])
 
     return (
-        <div className="wow fadeIn card-container col-12 w-50 d-flex justify-content-center align-items-center mx-auto mt-5" >
+        <div className="card-container w-50 wow fadeIn d-flex justify-content-center align-items-center mx-auto mt-2" >
             <div className="card-body d-flex flex-column">
-                    <div className="justify-content-center align-self-center mb-3">
-                        <h1 className="text-dark">{products.name}</h1>
+                    <div className="justify-content-center align-self-center">
+                        <h2 className="text-dark">{products.name}</h2>
                         <ControlledZoom overlayBgColorEnd='rgba(0, 0, 0, 0.6)' isZoomed={isZoomed} onZoomChange={handleZoomChange} zoomMargin={50}>
-                            <img style={{ width: '13em'}} className="detail-img wow pulse" src={products.img} alt={products.name}/>
+                            <img style={{ width: '13em'}} className="wow pulse" src={products.img} alt={products.name}/>
                         </ControlledZoom>
                         <h2 className="text-dark">{products.productdescription}</h2>
                         <h5 className="">Precio: <b>${products.price}</b></h5>
                         <h5 className="">Stock: <b>{products.stock}</b></h5>
-                            <div className="d-flex justify-content-center">
+                            <div className="d-flex justify-content-center mb-3">
                                 {inputType === 'button' ?  <ItemCount handleInter={handleInter} stock={products.stock} initial={1} onAdd={onAdd}/>
                                 : 
                                 <CartButtons />}
