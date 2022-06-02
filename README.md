@@ -20,6 +20,7 @@
 
 - #### Web developer : https://tomas1596.github.io/ProyectoFinal-DW/ (Imagine Dragons - Music)
 <img src="https://i.ibb.co/X8CGkbj/6db16f32bec7d7b3078b9e7f40b0b452.jpg" width="800px"/>
+<br />
 - #### Javascript : https://tomas1596.github.io/ProyectoFinal-JS/ (Animeflix - Netflix Clone)
 <img src="https://i.ibb.co/mhPwpG3/be491727191cac3f37f62c64b5eca1f5.png" width="800px"/>
 
