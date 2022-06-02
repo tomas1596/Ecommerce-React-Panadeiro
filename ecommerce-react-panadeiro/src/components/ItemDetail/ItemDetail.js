@@ -10,7 +10,7 @@ import 'react-medium-image-zoom/dist/styles.css'
 
 
 
-const ItemDetail = ({productos}) => {    
+const ItemDetail = ({products}) => {    
 
     const [inputType, setInputType ] = useState('button')
     const handleInter=()=>{
@@ -26,8 +26,8 @@ const ItemDetail = ({productos}) => {
 
     const onAdd = (count) =>{
         alert(`Has agregado ${count} producto/s a tu carrito`)
-        addToCart({...productos, count})
-      }
+        addToCart({...products, count})
+    }
 
     useEffect(() => {
         new WOW.WOW({
@@ -37,24 +37,24 @@ const ItemDetail = ({productos}) => {
 
     return (
         <div className="wow fadeIn card-container col-12 w-50 d-flex justify-content-center align-items-center mx-auto mt-5" >
-            <div className="card-body d-flex">
-                    <div className="w-50 col-6">
-                        <h1 className="text-dark">{productos.name}</h1>
-                        <ControlledZoom overlayBgColorEnd='rgba(0, 0, 0, 0.6)' isZoomed={isZoomed} onZoomChange={handleZoomChange} zoomMargin={100}>
-                            <img style={{ width: '13em'}} className="detail-img wow pulse" src={productos.img} alt={productos.name}/>
+            <div className="card-body d-flex flex-column">
+                    <div className="justify-content-center align-self-center mb-3">
+                        <h1 className="text-dark">{products.name}</h1>
+                        <ControlledZoom overlayBgColorEnd='rgba(0, 0, 0, 0.6)' isZoomed={isZoomed} onZoomChange={handleZoomChange} zoomMargin={50}>
+                            <img style={{ width: '13em'}} className="detail-img wow pulse" src={products.img} alt={products.name}/>
                         </ControlledZoom>
-                        <h2 className="text-dark">{productos.productdescription}</h2>
-                        <h5 className="">Precio: {productos.price}</h5>
-                        <h5 className="">Stock: {productos.stock}</h5>
+                        <h2 className="text-dark">{products.productdescription}</h2>
+                        <h5 className="">Precio: {products.price}</h5>
+                        <h5 className="">Stock: {products.stock}</h5>
                             <div className="d-flex justify-content-center">
-                                {inputType === 'button' ?  <ItemCount handleInter={handleInter} stock={productos.stock} initial={1} onAdd={onAdd}/>
+                                {inputType === 'button' ?  <ItemCount handleInter={handleInter} stock={products.stock} initial={1} onAdd={onAdd}/>
                                 : 
                                 <CartButtons />}
                             </div>
                     </div>
                 <div className="d-flex flex-column justify-content-center">
-                        <h2 className="text-dark mb-5">Descripción</h2>
-                        <h5 >{productos.detaildescription}</h5>
+                        <h2 className="text-dark mb-2">Descripción</h2>
+                        <h5 >{products.detaildescription}</h5>
                 </div>
             </div>
     </div>

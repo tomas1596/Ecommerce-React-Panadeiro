@@ -3,9 +3,9 @@ import "./Footer.css"
 
 const Footer = () => {
     return(
-        <div className="container-fluid bg-dark">
-            <footer className="text-lg-start">
-                <section className="d-flex justify-content-between p-4 text-white">
+        <div className="container-fluid">
+            <footer className="text-lg-start bg-dark">
+                <section className="d-flex justify-content-between p-4 text-white footer">
                     <h6>© 2022 Copyright • Tomás Panadeiro - React JS - Ecommerce</h6>
                 <div>
                     <a href="https://www.facebook.com/tomaspana/" rel="noopener noreferrer" target="_blank"><i className="fab fa-facebook-f fa-lg me-4"></i></a>
