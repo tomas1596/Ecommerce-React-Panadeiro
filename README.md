@@ -36,5 +36,5 @@
 <img alt="Firebase" width="35px"  src="https://img.icons8.com/color/48/undefined/firebase.png"/>
 
 ## Contact me:
-[<img align=center src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/tom%C3%A1s-panadeiro)
+[<img align=center src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/tom%C3%A1s-panadeiro-78698422a/)
 [<img align=center src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />](https://www.instagram.com/tomaspanadeiro/)
