@@ -15,7 +15,7 @@ const NavBar = () => {
                 </button>
                     <div className="collapse navbar-collapse justify-content-center align-items-center pt-2 fw-bold" id="navbarNavDropdown">
                         <ul className="navbar-nav">
-                            <li className="nav-item">
+                            <li className="nav-item ">
                                 <NavLink className='link' to='/'>
                                     <p className="nav-link text-white" aria-current="page">Inicio</p>
                                 </NavLink>

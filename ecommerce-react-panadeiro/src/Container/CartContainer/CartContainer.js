@@ -83,9 +83,9 @@ const CartContainer = () => {
                     </div>  
                     : 
                     <div> 
-                        <h4 className="d-flex flex-column mx auto mt-5 text-white">No hay products en tu carrito</h4>
+                        <h4 className="d-flex flex-column mx auto mt-5 text-white">No hay productos en tu carrito</h4>
                         <Link to="/"> 
-                            <button className="mt-3 btn-lg btn-block fw-bold">Volver a Inicio</button>
+                            <button className="mt-3 btn-lg btn-block fw-bold btn-hover">¿Volver a Inicio?</button>
                         </Link> 
                     </div>}
                 </div>
