@@ -18,7 +18,7 @@ function Item({id, img, name, price}) {
                 <img className="card-img" src={img} alt={name}></img>  
                 <div className="pt-2 noHover">
                     <div>{name} </div>
-                    <div>Precio: {price} </div>
+                    <div>Precio: ${price} </div>
                 </div></Link>
                 <div>
                     <Link to={`/detail/${id}`}><button className="btn btn-primary btn-block w-75 mt-1">Detalle del producto</button></Link>

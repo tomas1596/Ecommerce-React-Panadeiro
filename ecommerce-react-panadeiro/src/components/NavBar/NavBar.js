@@ -21,7 +21,7 @@ const NavBar = () => {
                                 </NavLink>
                             </li>
                             <li className="nav-item dropdown">
-                                <p className="nav-link dropdown-toggle text-white mb-3" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> products </p>
+                                <p className="nav-link dropdown-toggle text-white mb-3" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos </p>
                                     <ul className="dropdown-menu bg-dark"aria-labelledby="navbarDropdownMenuLink">
                                         <li className="nav-item">
                                             <NavLink className='link' to='/category/preentreno'>

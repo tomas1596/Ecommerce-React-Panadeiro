@@ -7,7 +7,7 @@ import { getDocs, collection, getFirestore, query, where } from 'firebase/firest
 
 
 
-const ItemListContainer = (isLoading, {greeting = 'WE GO GYM MUSCLE SHOP'}) => {
+const ItemListContainer = (isLoading) => {
 
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -17,6 +17,7 @@ const ItemListContainer = (isLoading, {greeting = 'WE GO GYM MUSCLE SHOP'}) => {
     useEffect(() => {
         const db = getFirestore();
         const queryCollection = collection(db, 'items');
+        
         const queryCollectionFilter = id ? query(queryCollection, where('category','==',id)) : queryCollection
             
         getDocs(queryCollectionFilter)
@@ -29,7 +30,7 @@ const ItemListContainer = (isLoading, {greeting = 'WE GO GYM MUSCLE SHOP'}) => {
 
     return (
             <div>
-                <h1>{greeting}</h1>
+                <h1>WE GO GYM MUSCLESHOP</h1>
                 <div className="container d-flex justify-content-center align-items-center" aria-live="polite" aria-busy={isLoading}>
                     {loading ? (<DotSpinner size={50} speed={0.9} color="white"/>) : (<ItemList products={products}/>)}
                 </div>

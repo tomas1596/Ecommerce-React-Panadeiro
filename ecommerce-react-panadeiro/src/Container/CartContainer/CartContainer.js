@@ -1,14 +1,14 @@
-import { useCartContext} from "../../Container/Context/CartContext";
+import { useCartContext} from "../Context/CartContext";
 import { addDoc, collection, doc, documentId, getDocs, getFirestore, query, updateDoc, where, writeBatch } from "firebase/firestore";
 
-import "./CartItem.css"
+import "./CartContainer.css"
 import { Link } from "react-router-dom";
 
 
-const Cart = () => {
+const CartContainer = () => {
     const {cartList, removeCart, removeItem, totalPrice} = useCartContext()
 
-    function generateBuy() {
+    function generateOrder() {
         
         let orden = {}
 
@@ -17,10 +17,10 @@ const Cart = () => {
 
         orden.products = cartList.map(products => {
             const id = products.id
-            const nombre = products.name
-            const precio = products.price * products.count
+            const name = products.name
+            const price = products.price * products.count
 
-            return {id, nombre, precio}
+            return {id, name, price}
         })
 
         //crear orden en firebase
@@ -68,8 +68,8 @@ const Cart = () => {
                             <Link className="link" to ={`/detail/${products.id}`}>
                                 <p className="text-dark title-card ">{products.name}</p>
                             </Link>
-                            <h5>Precio: {products.price}</h5>
-                            <h5>Cantidad: {products.count}</h5>
+                            <h5>Precio: <b>${products.price}</b></h5>
+                            <h5>Cantidad: <b>{products.count}</b></h5>
                         </div>
                     </li>
                     <button onClick={() => removeItem(products.id)} className="trash-btn align-self-center mt-2 mb-2 fa-regular fa-trash-can fa-2x"></button>         
@@ -77,9 +77,9 @@ const Cart = () => {
                 <div>
                     {cartList.length ? 
                     <div className="d-flex flex-row card justify-content-between">
-                        <h5 className="price ms-5">{`Costo total: $${totalPrice}`}</h5>
+                        <h5 className="price ms-5">{`Costo total:$${totalPrice}`}</h5>
                         <button className="fw-bold btn-md btn-block me-5" onClick={removeCart}>Vaciar Carrito</button>
-                        <button className="fw-bold btn-md btn-block me-5" onClick={generateBuy}>Terminar Compra</button>
+                        <button className="fw-bold btn-md btn-block me-5" onClick={generateOrder}>Terminar Compra</button>
                     </div>  
                     : 
                     <div> 
@@ -93,4 +93,4 @@ const Cart = () => {
     )
 }
 
-export default Cart;
+export default CartContainer;
