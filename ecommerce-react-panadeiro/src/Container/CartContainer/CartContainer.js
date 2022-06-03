@@ -1,62 +1,11 @@
 import { useCartContext} from "../Context/CartContext";
-import { addDoc, collection, doc, documentId, getDocs, getFirestore, query, updateDoc, where, writeBatch } from "firebase/firestore";
-
 import "./CartContainer.css"
 import { Link } from "react-router-dom";
+import CartForm from "../../components/Form/Form";
 
 
 const CartContainer = () => {
     const {cartList, removeCart, removeItem, totalPrice} = useCartContext()
-
-    function generateOrder() {
-        
-        let orden = {}
-
-        orden.buyer = { name: 'Tomás', email: 't@hotmail.com', phone: '123456789' }
-        orden.total = totalPrice
-
-        orden.products = cartList.map(products => {
-            const id = products.id
-            const name = products.name
-            const price = products.price * products.count
-
-            return {id, name, price}
-        })
-
-        //crear orden en firebase
-        const db = getFirestore()
-        const queryCollection = collection(db, 'orders')
-        addDoc(queryCollection, orden)
-        .then(resp => console.log(resp))
-        .catch(err => console.log(err))
-        .finally(() => removeCart())
-
-        //update orden en firebase
-/*         const queryItem = doc(db, 'items', '11DVncyLFuxw4LWXLtM9')
-
-        updateDoc(queryItem, {
-            stock: 10
-        })
-        .then(() => console.log('terminada')) */
-
-        // actualizar el stock
-/*         const queryCollectionStock = collection(db, 'items')
-
-        const queryActualizarStock = query(
-            queryCollectionStock,
-            where( documentId(), 'in', cartList.map(it = it.id))
-        )
-
-        const batch = writeBatch(db)
-
-        await getDocs(queryActualizarStock)
-        .then(resp => resp.docs.forEach(res => batch.update(res.ref, {
-            stock: res.data().stock - cartList.find(item => item.id === res.id).count
-        })))
-        .finally(() => console.log('actualizado'))
-
-        batch.commit() */
-    }
 
     return (
         <div style={{height:'1000px'}} className="w-50 card-container-fluid column justify-content-evenly mx-auto mt-2">
@@ -76,10 +25,15 @@ const CartContainer = () => {
                 </div>)}
                 <div>
                     {cartList.length ? 
-                    <div className="d-flex flex-row card justify-content-between">
-                        <h5 className="price ms-5">{`Costo total:$${totalPrice}`}</h5>
-                        <button className="fw-bold btn-md btn-block me-5" onClick={removeCart}>Vaciar Carrito</button>
-                        <button className="fw-bold btn-md btn-block me-5" onClick={generateOrder}>Terminar Compra</button>
+                    <div className="">
+                        <div className="bg-light">
+                            <h5 className="price ms-5">{`Costo total:$${totalPrice}`}</h5>
+                            <button className="fw-bold btn-md btn-block me-4" onClick={removeCart}>Vaciar Carrito</button>
+                        </div>
+                        <div>
+                            <h2 className="mt-5">Un paso más antes de comprar..</h2>
+                            <CartForm />
+                        </div>
                     </div>  
                     : 
                     <div> 
