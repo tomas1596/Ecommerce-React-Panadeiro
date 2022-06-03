@@ -29,7 +29,7 @@ const ItemDetail = ({products}) => {
             text:  `Has agregado ${count} producto/s a tu carrito`,
             icon: 'success',
             confirmButtonText: 'Continuar'
-          })
+        })
         addToCart({...products, count})
     }
 

@@ -34,7 +34,7 @@ const CartForm = () => {
             text:  'Compra realizada!',
             icon: 'success',
             confirmButtonText: 'Aceptar'
-          }))
+        }))
         .catch(err => console.log(err))
         .finally(() => removeCart() )
     } 
