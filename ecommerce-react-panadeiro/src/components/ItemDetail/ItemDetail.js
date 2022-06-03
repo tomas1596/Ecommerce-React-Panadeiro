@@ -5,6 +5,7 @@ import { Controlled as ControlledZoom } from 'react-medium-image-zoom'
 import { useCartContext } from '../../Container/Context/CartContext'
 import WOW from 'wowjs';
 import 'react-medium-image-zoom/dist/styles.css'
+import Swal from 'sweetalert2'
 
 
 
@@ -24,7 +25,11 @@ const ItemDetail = ({products}) => {
     const {addToCart} = useCartContext()
 
     const onAdd = (count) =>{
-        alert(`Has agregado ${count} producto/s a tu carrito`)
+        Swal.fire({
+            text:  `Has agregado ${count} producto/s a tu carrito`,
+            icon: 'success',
+            confirmButtonText: 'Continuar'
+          })
         addToCart({...products, count})
     }
 

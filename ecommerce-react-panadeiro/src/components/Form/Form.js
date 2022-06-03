@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useCartContext } from "../../Container/Context/CartContext";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { Formik, Form, Field } from "formik";
+import Swal from "sweetalert2";
 
 
 const CartForm = () => {
@@ -29,7 +30,11 @@ const CartForm = () => {
         const queryCollection = collection(db, 'orders')
         addDoc(queryCollection, order)
         .then(resp => console.log(resp))
-        .then(() => alert('Compra realizada'))
+        .then(() =>         Swal.fire({
+            text:  'Compra realizada!',
+            icon: 'success',
+            confirmButtonText: 'Aceptar'
+          }))
         .catch(err => console.log(err))
         .finally(() => removeCart() )
     } 
