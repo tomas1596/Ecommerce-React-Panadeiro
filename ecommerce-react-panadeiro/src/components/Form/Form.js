@@ -31,7 +31,7 @@ const CartForm = () => {
         addDoc(queryCollection, order)
         .then(resp => console.log(resp))
         .then(() =>         Swal.fire({
-            text:  'Compra realizada!',
+            text:  'Muchas gracias por su compra!',
             icon: 'success',
             confirmButtonText: 'Aceptar'
         }))
