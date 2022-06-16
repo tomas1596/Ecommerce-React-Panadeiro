@@ -19,8 +19,8 @@ const About = () => {
                 <ul className="mt-3">
                     <li className="d-flex justify-content-center"><h5 className="wow fadeIn" data-wow-delay="3s">Web Developer</h5> <p className="wow fadeIn" data-wow-delay="4s">✅</p> </li>
                     <li className="d-flex justify-content-center"><h5 className="wow fadeIn" data-wow-delay="3s">Javascript</h5><p className="wow fadeIn" data-wow-delay="5s">✅</p></li>
-                    <li className="d-flex justify-content-center"><h5 className="wow fadeIn" data-wow-delay="3s">React</h5><p className="wow fadeIn" data-wow-delay="6s">❓</p></li>
-                    <li className="d-flex justify-content-center"><h5 className="wow fadeIn" data-wow-delay="3s">Backend</h5><p className="wow fadeIn" data-wow-delay="7s">❌  (No empezado)</p></li>
+                    <li className="d-flex justify-content-center"><h5 className="wow fadeIn" data-wow-delay="3s">React</h5><p className="wow fadeIn" data-wow-delay="6s">❓(En proceso)</p></li>
+                    <li className="d-flex justify-content-center"><h5 className="wow fadeIn" data-wow-delay="3s">Backend</h5><p className="wow fadeIn" data-wow-delay="7s">🔜  (No empezado)</p></li>
                 </ul>
                     <div className="d-flex justify-content-center mt-2 mb-2 wow fadeIn" data-wow-delay="7.5s">
                         <img src="https://img.icons8.com/emoji/48/undefined/fire.png" width="30px" alt="Foto"/><h5> - ¡¡Mirá mis otros proyectos!! - </h5> <img src="https://img.icons8.com/emoji/48/undefined/fire.png" width="30px" alt="Foto"/>
