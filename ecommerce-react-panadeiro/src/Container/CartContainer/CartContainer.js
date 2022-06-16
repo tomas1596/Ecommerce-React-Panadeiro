@@ -13,7 +13,7 @@ const CartContainer = () => {
                 <div className="card d-flex flex-row h-25 justify-content-between mx-auto mt-1">
                     <li className="d-flex basis">
                         <img className="img-fluid cart-img" src={products.img} alt={products.name}/>
-                        <div className="d-flex flex-column ms-5 align-self-center">
+                        <div className="d-flex flex-column ms-5 col-6 align-self-center">
                             <Link className="link" to ={`/detail/${products.id}`}>
                                 <p className="text-dark title-card ">{products.name}</p>
                             </Link>
