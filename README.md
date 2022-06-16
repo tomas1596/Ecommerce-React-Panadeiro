@@ -6,7 +6,7 @@
 -  ####  Web Developer ☑️ <img align="center" alt="HTML5" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="padding-right:10px;" /> <img align="center" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />
 - #### Javascript ☑️ <img align="center" alt="JavaScript" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="padding-right:10px;" />
 - #### React ❓<img align="center" alt="React" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right:10px;" />
-- #### Backend 👨‍💻  ❌  (In progress)
+- #### Backend 👨‍💻  🔜  (Next)
 
 ## <p align=center><b> This is my React project </p>
 ### <img src="https://img.icons8.com/plasticine/60/undefined/rocket.png" width="30px"/> Muscle Shop Ecommerce : https://tomas1596.github.io/Ecommerce-React-Panadeiro/
@@ -34,6 +34,10 @@
 <img alt="Git" width="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" style="padding-right:10px;" />
 <img alt="GitHub" width="35px" src="https://user-images.githubusercontent.com/3369400/139448065-39a229ba-4b06-434b-bc67-616e2ed80c8f.png" style="padding-right:10px;" />
 <img alt="Firebase" width="35px"  src="https://img.icons8.com/color/48/undefined/firebase.png"/>
+<img alt="Yup" width="35px"  src="https://i.gyazo.com/68216fa1e34095369457523b24d36ea9.png"/>
+<img alt="Formik" width="35px"  src="https://user-images.githubusercontent.com/4060187/61057426-4e5a4600-a3c3-11e9-9114-630743e05814.png"/>
+<img alt="Sweet Alert 2" width="35px"  src="https://sweetalert2.github.io/images/SweetAlert2.png"/>
+
 
 ## Contact me:
 [<img align=center src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/tom%C3%A1s-panadeiro-78698422a/)
