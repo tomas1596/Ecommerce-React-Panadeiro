@@ -37,6 +37,9 @@
 <img alt="Yup" width="35px"  src="https://i.gyazo.com/68216fa1e34095369457523b24d36ea9.png"/>
 <img alt="Formik" width="35px"  src="https://user-images.githubusercontent.com/4060187/61057426-4e5a4600-a3c3-11e9-9114-630743e05814.png"/>
 <img alt="Sweet Alert 2" width="35px"  src="https://sweetalert2.github.io/images/SweetAlert2.png"/>
+<img alt="WOW JS" width="35px"  src="https://user-images.githubusercontent.com/38141061/174164427-b8d78998-5085-417c-ae7e-26a5f7c6b3b9.png"/>
+
+
 
 
 ## Contact me:
