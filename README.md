@@ -6,7 +6,7 @@
 -  ####  Web Developer ☑️ <img align="center" alt="HTML5" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="padding-right:10px;" /> <img align="center" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />
 - #### Javascript ☑️ <img align="center" alt="JavaScript" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="padding-right:10px;" />
 - #### React ❓<img align="center" alt="React" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right:10px;" />
-- #### Backend 👨‍💻  ❌  (In progress)
+- #### Backend 👨‍💻  🔜  (Next)
 
 ## <p align=center><b> This is my React project </p>
 ### <img src="https://img.icons8.com/plasticine/60/undefined/rocket.png" width="30px"/> Muscle Shop Ecommerce : https://tomas1596.github.io/Ecommerce-React-Panadeiro/
